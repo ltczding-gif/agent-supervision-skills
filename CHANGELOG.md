@@ -11,3 +11,4 @@ This project follows a simple date-based changelog until formal releases are nee
 - Add installation and security-model documentation.
 - Exclude internal historical planning notes from the public skill package.
 - Add value positioning and use-case documentation.
+- Add a Chinese README section.
