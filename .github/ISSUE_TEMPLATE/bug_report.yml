@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible problem with one supervision skill.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Affected skill
+      options:
+        - claude-supervision
+        - codex-supervision
+        - kimi-supervision
+        - repository docs or packaging
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Use redacted commands and paths. Do not paste secrets or private logs.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, PowerShell version, target CLI version, and relevant auth mode.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs
+      description: Paste only the smallest useful redacted excerpt.
+      render: text

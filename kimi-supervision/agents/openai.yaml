@@ -1,0 +1,8 @@
+interface:
+  display_name: "Kimi Supervision"
+  short_description: "Delegate work to local Kimi, wait longer, monitor native activity, and verify the result."
+  brand_color: "#1F6FEB"
+  default_prompt: "Use $kimi-supervision to delegate a narrow local task to Kimi Code, prefer native Kimi session resume, monitor whether it is still actively running, wait up to at least 10 minutes on substantial tasks, and verify the result."
+
+policy:
+  allow_implicit_invocation: true
